@@ -193,60 +193,60 @@ local function sell_toggle_button_function()
 	writefile('output/count.txt','helmets: '..helmets..'\nchests: '..chests..'\nweapons: '..weapons..'\nabilities: '..abilities)
 
 	if legendary_ability and legendary_weapon then
-		for i = helmets + 1, 9 do
+		for i = helmets + 1, helmets + 10 do
 			fire_sell_item_event('helmet',i)
 		end
 
-		for i = chests + 1, 9 do
+		for i = chests + 1,chests + 10 do
 			fire_sell_item_event('chest',i)
 		end
 		wait(1)
 		save_state_button_function()
 
 	elseif legendary_weapon then
-		for i = helmets + 1, 9 do
+		for i = helmets + 1, helmets + 10 do
 			fire_sell_item_event('helmet',i)
 		end
 
-		for i = chests + 1, 9 do
+		for i = chests + 1, chests + 10 do
 			fire_sell_item_event('chest',i)
 		end
 
-		for i = abilities + 1, 9 do
+		for i = abilities + 1, abilities + 10 do
 			fire_sell_item_event('ability',i)
 		end
 		wait(1)
 		save_state_button_function()
 
 	elseif legendary_ability then
-		for i = helmets + 1, 9 do
+		for i = helmets + 1, helmets + 10 do
 			fire_sell_item_event('helmet',i)
 		end
 
-		for i = chests + 1, 9 do
+		for i = chests + 1, chests + 10 do
 			fire_sell_item_event('chest',i)
 		end
 
-		for i = weapons + 1, 9 do
+		for i = weapons + 1, weapons + 10 do
 			fire_sell_item_event('weapon',i)
 		end
 		wait(1)
 		save_state_button_function()
 
 	else
-		for i = helmets + 1, 9 do
+		for i = helmets + 1, helmets + 10 do
 			fire_sell_item_event('helmet',i)
 		end
 
-		for i = chests + 1, 9 do
+		for i = chests + 1,chests + 10 do
 			fire_sell_item_event('chest',i)
 		end
 
-		for i = weapons + 1, 9 do
+		for i = weapons + 1, weapons + 10 do
 			fire_sell_item_event('weapon',i)
 		end
 
-		for i = abilities + 1, 9 do
+		for i = abilities + 1, abilities + 10 do
 			fire_sell_item_event('ability',i)
 		end
 	end
