@@ -200,6 +200,7 @@ local function sell_toggle_button_function()
 		for i = chests + 1, 9 do
 			fire_sell_item_event('chest',i)
 		end
+		wait(1)
 		save_state_button_function()
 
 	elseif legendary_weapon then
@@ -214,6 +215,7 @@ local function sell_toggle_button_function()
 		for i = abilities + 1, 9 do
 			fire_sell_item_event('ability',i)
 		end
+		wait(1)
 		save_state_button_function()
 
 	elseif legendary_ability then
@@ -228,7 +230,7 @@ local function sell_toggle_button_function()
 		for i = weapons + 1, 9 do
 			fire_sell_item_event('weapon',i)
 		end
-
+		wait(1)
 		save_state_button_function()
 
 	else
